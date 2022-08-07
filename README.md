@@ -3,7 +3,7 @@
 by Shikai Fang, Akil Narayan, Robert M. Kirby, Shandian Zhe
 
 
-This authors' official PyTorch implementation for : [Bayesian Continuous-Time Tucker Decomposition](https://proceedings.mlr.press/v162/fang22b/fang22b.pdf) (ICML2022 Oral paper)
+This authors' official PyTorch implementation for : [Bayesian Continuous-Time Tucker Decomposition](https://proceedings.mlr.press/v162/fang22b/fang22b.pdf) (ICML 2022 Oral paper)
 
 ## Methods Overview:
 
