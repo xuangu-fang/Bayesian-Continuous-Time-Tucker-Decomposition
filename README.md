@@ -5,6 +5,9 @@ by Shikai Fang, Akil Narayan, Robert M. Kirby, Shandian Zhe
 
 This authors' official PyTorch implementation for : [Bayesian Continuous-Time Tucker Decomposition](https://proceedings.mlr.press/v162/fang22b/fang22b.pdf) (ICML 2022 Oral paper)
 
+
+See more material(slides,poster) at my [page](https://www.cs.utah.edu/~shikai/)
+
 ## Methods Overview:
 
 ### Dynamic Tucker-core to handle the continuous-time tensor data
