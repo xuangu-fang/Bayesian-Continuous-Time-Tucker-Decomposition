@@ -125,7 +125,8 @@ class LDS_CEP_tucker_full_efficient(LDS_GP):
 
     def moment_kronecker_tucker(self,modes,ind,order='first'):
        # computhe first and second moments of kronecker_prod_{k \in given modes} u_k (denote as b/b^{\k} in draft)
-        # N = ind.shape[0]
+        
+        ind = ind.reshape(-1,self.nmod) # N * nmod
         last_mode = modes[-1]
 
         assert order in {'first','second'}

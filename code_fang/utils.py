@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-# import bisect
+import bisect
 import argparse
 
 def parse_args_CEP_based_model():
@@ -91,9 +91,9 @@ def make_log_SVI(args,result_dict):
     f.write('\n\n\n')
     f.close()
 
-# def bisect_search(nuclears, x):
-#         idx = bisect.bisect_right(nuclears, x)
-#         return idx
+def bisect_search(nuclears, x):
+        idx = bisect.bisect_right(nuclears, x)
+        return idx
 
 # batch knorker product  
 def kronecker_product_einsum_batched(A: torch.Tensor, B: torch.Tensor): 

@@ -18,15 +18,15 @@ torch.manual_seed(2)
 args = utils.parse_args_CEP_based_model()
 print(args.dataset, '  ',args.method)
 if args.dataset == 'mvlens':
-    file_base_name = '../data/processed/mvlens_small/mv_small_week_' #.npy'
+    file_base_name = '../data/mvlens_small/mv_small_week_' #.npy'
 elif args.dataset == 'ufo':
-    file_base_name = '../data/processed/ufo/ufo_week_'
+    file_base_name = '../data/ufo/ufo_week_'
 elif args.dataset == 'twitch':   
-    file_base_name = '../data/processed/twitch/twitch_sub_hour_'
+    file_base_name = '../data/twitch/twitch_sub_hour_'
 elif args.dataset == 'dblp':  
-    file_base_name = '../data/processed/dblp/dblp_year_'
+    file_base_name = '../data/dblp/dblp_year_'
 elif args.dataset == 'ctr':  
-    file_base_name = '../data/processed/ctr/ctr_hour_'
+    file_base_name = '../data/ctr/ctr_hour_'
 
 
 # model_class = LDS_CEP_full_v3

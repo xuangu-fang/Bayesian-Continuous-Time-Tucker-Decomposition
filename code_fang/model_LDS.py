@@ -61,14 +61,14 @@ class LDS_GP():
             
         # find the closest training state for each test data
         
-        # if self.fix_int:
-        #     test_X_state = (self.test_time/self.fix_int).floor()
-        #     test_X_state = torch.where(test_X_state.long()>self.N_time-1,self.N_time-1,test_X_state.long())
+        if self.fix_int:
+            test_X_state = (self.test_time/self.fix_int).floor()
+            test_X_state = torch.where(test_X_state.long()>self.N_time-1,self.N_time-1,test_X_state.long())
 
-        # else:
-        test_X_state = []
-        for test_X in self.test_time.numpy():
-                test_X_state.append(utils.bisect_search(self.train_time.cpu().numpy(),test_X)-1)
+        else:
+            test_X_state = []
+            for test_X in self.test_time.numpy():
+                    test_X_state.append(utils.bisect_search(self.train_time.cpu().numpy(),test_X)-1)
 
         return torch.tensor(test_X_state).long()
 
